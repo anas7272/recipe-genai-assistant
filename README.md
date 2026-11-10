@@ -158,11 +158,8 @@ The simple oracle may disagree with the more conservative normalizer on distinct
 
 ## Limitations
 
-- Restriction and allergen checks inspect ingredient text. Hidden ingredients and cross-contamination cannot be determined, so results are not a medical or allergy-safety guarantee.
-- Substitution effects on taste and texture are predictions, not experimentally verified outcomes. Evidence may be indirect, weak, or conflicting.
 - Dataset fields do not provide reliable nutrition, ratings, serving counts, or structured cooking times. Times found in instruction text are not equivalent to verified cooking-time metadata.
-- Natural-language parsing and ingredient normalization are imperfect; review recipe records and evidence, especially for ambiguous requests.
-- The fixture is small and useful for reproducibility, not a substitute for running evaluation on the full downloaded dataset.
+
 
 ## AI tool disclosure
 
