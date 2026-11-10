@@ -156,10 +156,6 @@ The simple oracle may disagree with the more conservative normalizer on distinct
 - **Matching score:** `100 × (wᵣ × recall + w꜀ × coverage + wₛ × step_ease)`. The selected preference determines weights; ties use fewer missing ingredients, fewer steps, then recipe ID. Salt, water, and black pepper are assumed available and are disclosed in the output.
 - **External search:** not used. Substitution evidence comes from the local recipe collection.
 
-## Limitations
-
-- Dataset fields do not provide reliable nutrition, ratings, serving counts, or structured cooking times. Times found in instruction text are not equivalent to verified cooking-time metadata.
-
 
 ## AI tool disclosure
 
@@ -171,24 +167,10 @@ This helped me identify design gaps, explore alternative solutions, and make the
 
 However, I don't blindly accept AI-generated suggestions. I evaluate them against the actual project requirements, implement the decisions myself, and make sure I understand the underlying logic, code, and trade-offs. I can also explain and modify the implementation without depending on these tools.
 
-## Publish this project to GitHub
 
-1. Create a **public, empty** repository on GitHub (do not initialize it with another README or license).
-2. From the project folder, initialize Git and stage only source, tests, evaluation files, and documentation. Do not stage the dataset, database, virtual environment, or API keys:
+## Limitations
 
-```powershell
-git init -b main
-git status --short
-git add README.md .gitignore app.py requirements.txt recipebot tests eval .streamlit
-git status --short
-git commit -m "Prepare recipe assistant assignment"
-```
+- Dataset fields do not provide reliable nutrition, ratings, serving counts, or structured cooking times. Times found in instruction text are not equivalent to verified cooking-time metadata.
 
-3. Replace `<USERNAME>` and `<REPOSITORY>` below with the GitHub account and repository name, then connect and push:
 
-```powershell
-git remote add origin https://github.com/<USERNAME>/<REPOSITORY>.git
-git push -u origin main
-```
 
-Authenticate with Git Credential Manager or `gh auth login` when prompted. Never put a personal access token or API key in the remote URL or in a committed file. If `git status --short` lists a dataset, database, `.venv`, or secret file, stop and fix `.gitignore` before staging or pushing.
