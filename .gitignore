@@ -1,0 +1,11 @@
+data/*.json
+data/*.db
+*.db
+.venv/
+venv/
+__pycache__/
+*.pyc
+names_*.txt
+.env
+.env.*
+.streamlit/secrets.toml

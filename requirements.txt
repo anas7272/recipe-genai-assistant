@@ -1,0 +1,2 @@
+# The CLI uses only the Python standard library. Install this for the optional web UI.
+streamlit>=1.40,<2.0

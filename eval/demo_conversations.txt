@@ -1,0 +1,26 @@
+# --- Conv 1 (Task 1, multi-turn): search then refine with a restriction
+Find a penne pasta recipe.
+I cannot have dairy.
+show #1
+reset
+# --- Conv 2 (Task 1, aggregate stats)
+How many recipes contain both garlic and onion? What percentage of the dataset is that?
+Among recipes containing tomato, which five have the fewest instruction steps?
+What is the average and median number of ingredients in recipes containing tomato?
+What are the most common ingredients in recipes containing chicken?
+# --- Conv 3 (Task 2, multi-turn)
+I have eggs, onions, tomatoes, and rice. Suggest five recipes using as many of these as possible, with no peanuts and at most six instruction steps. Prefer recipes that need the fewest additional ingredients.
+Exclude eggs too.
+# --- Conv 4 (Task 2, no match)
+reset
+I have rice and tomatoes. Suggest recipes with at most 1 steps.
+# --- Conv 5 (Task 3)
+reset
+Take the banana bread recipe and remove eggs. Use only ingredients that appear in the dataset.
+use flaxseed
+# --- Conv 6 (Task 3, dairy)
+reset
+Find a penne cream recipe.
+Replace cream in this penne recipe without dairy.
+# --- Conv 7 (Task 3, refusal: unsupported ingredient)
+replace vanilla in the banana bread recipe
