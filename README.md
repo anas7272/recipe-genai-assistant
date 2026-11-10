@@ -166,7 +166,13 @@ The simple oracle may disagree with the more conservative normalizer on distinct
 
 ## AI tool disclosure
 
-Claude (Anthropic) was used during the initial implementation to help draft code, ingredient lexicons, tests, and design choices. GitHub Copilot was used to help revise conversation-state handling, related tests, and this documentation. The submitting developer should review and be prepared to explain all implementation and evaluation decisions.
+I have used **Claude and GitHub Copilot** during development, mainly for analysing data, exploring system design decisions, and evaluating the overall architecture.
+
+One approach I found particularly useful was using them as independent reviewers. I would share my initial idea or architecture with both tools, compare their suggestions, and make them challenge each other's approaches by examining the pros, cons, trade-offs, and possible limitations.
+
+This helped me identify design gaps, explore alternative solutions, and make the architecture more efficient and reliable.
+
+However, I don't blindly accept AI-generated suggestions. I evaluate them against the actual project requirements, implement the decisions myself, and make sure I understand the underlying logic, code, and trade-offs. I can also explain and modify the implementation without depending on these tools.
 
 ## Publish this project to GitHub
 
